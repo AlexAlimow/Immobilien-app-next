@@ -1,11 +1,20 @@
 import Link from "next/link";
 
+const links = [
+  { href: "/about", text: "Learn about us" },
+  { href: "/career", text: "Career" },
+  { href: "/learning-grid", text: "Grids" },
+  { href: "/faq", text: "FAQ" },
+];
+
+const generalLinks = links.map(({ href, text }) => (
+  <Link key={href} href={href} className="text-blue-700 hover:text-amber-600">
+    {text}
+  </Link>
+));
+
 export default function NavBar() {
   return (
-    <nav>
-      <Link href="/about">Learn about us</Link>
-      <Link href="/carier">Carier</Link>
-      <Link href="/help">FAQ</Link>
-    </nav>
+    <nav className="w-full flex justify-center gap-2 my-4">{generalLinks}</nav>
   );
 }

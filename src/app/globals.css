@@ -10,6 +10,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --spacing-70: 17.5rem;
+  --spacing-100: 25rem;
+  --spacing-120: 30rem;
+  --spacing-200: 50rem;
 }
 
 @media (prefers-color-scheme: dark) {

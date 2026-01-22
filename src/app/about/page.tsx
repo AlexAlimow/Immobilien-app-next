@@ -2,11 +2,10 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div>
+    <section>
       <h2>About</h2>
-
-      <Link href="/">Back to home</Link>
       
-    </div>
+      <Link href="/about/me">Learn more about developer</Link>
+    </section>
   );
 }

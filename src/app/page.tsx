@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,3 +9,8 @@ export default function Home() {
     </div>
   );
 }
+
+// Создайте страничку Career
+// она должна открываться по пути /career
+
+// на домашней страничке - сделайте кнопку
