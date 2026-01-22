@@ -1,13 +1,6 @@
-"use client";
-import { motion } from "framer-motion";
-
 export default function LearningGrid() {
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       <h2>Grid</h2>
       <div className="grid grid-cols-4 gap-2">
         <div className="bg-amber-300 col-span-3">1</div>
@@ -19,7 +12,7 @@ export default function LearningGrid() {
       <h2>Flexible grids</h2>
       <p>It depens on width of viewport</p>
 
-      <div className="bg-amber-600 w-40 min-[327px]:w-44 sm:w-70 md:w-120 lg:w-200 h-100">
+      <div className="bg-amber-600 w-40 @min-[327px]:w-44 sm:w-70 md:w-120 lg:w-200 h-100">
         1
       </div>
 
@@ -30,16 +23,16 @@ export default function LearningGrid() {
         <div className="bg-amber-300 col-span-4 md:col-span-2">4</div>
       </div>
       <h2>Task</h2>
-      <div className="grid grid-cols-4 lg:grid-cols-3 gap-2">
-        <div className="bg-green-200 col-span-4 lg:col-span-1">1</div>
-        <div className="bg-green-200 col-span-4 md:col-span-2 lg:col-span-1">
+      <div className="grid grid-cols-4 gap-2">
+        <div className="bg-green-200 col-span-4">1</div>
+        <div className="bg-green-200 col-span-4 md:col-span-2 lg:col-span-4">
           2
         </div>
-        <div className="bg-green-200 col-span-4 md:col-span-2 lg:col-span-1">
+        <div className="bg-green-200 col-span-4 md:col-span-2 lg:col-span-4">
           3
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
